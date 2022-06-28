@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view wx-if="{{!initial}}" class="main">
+  <view class="head">
+    <view class="left">
+      ---------
+    </view>
+    <view class="rigth">
+      <view><icon></icon></view>
+      <text></text>
+    </view>
+  </view>
+</view>
+<view wx-if="{{initial}}" class="initial">
+  <button bindtap="getUserNews">登录</button>
+</view>

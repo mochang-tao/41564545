@@ -1,0 +1,17 @@
+/**index.wxss**/
+.head{
+  display: fixed;
+}
+.head .left{
+  float: left;
+}
+.head .rigth{
+  float: right;
+}
+.initial{
+  text-align: center;
+  margin: 0 auto;
+}
+.initial button{
+  background-color: aqua;
+}
