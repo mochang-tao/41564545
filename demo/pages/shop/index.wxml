@@ -43,12 +43,20 @@
       <view class="blibli">
         <view class="blibli-left">
           <swiper indicator-dots="true" autoplay="true" interval="{{10000}}">
-            <swiper-item wx:for="{{}}" wx:key="index">
-
+            <swiper-item class="blibli-left-swiper" wx:for="{{blibliData}}" wx:key="index" style="background-image: url({{item.url}});">
             </swiper-item>
           </swiper>
         </view>
-        <view class="blibli-right"></view>
+        <view class="blibli-right">
+          <view class="blibli-right-title">
+            <text>魔力赏</text>
+            <text>每周五海量上新</text>
+          </view>
+          <view class="blibli-right-content" wx:for="{{blibliGoods}}" wx:key="index">
+              <view class="blibli-right-img"><image src="{{item.url}}"></image></view>
+              <view style="text-align: center;">{{item.Price}}</view>
+          </view>
+        </view>
       </view>
     </scroll-view>
   </view>

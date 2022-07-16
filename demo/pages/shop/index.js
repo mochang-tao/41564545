@@ -55,13 +55,15 @@ Page({
       {url:'../../static/img/xq_6.png',name:'次元服饰'},
     ],
     blibliData:[
-      {url:''},
-      {url:''},
-      {url:''},
-      {url:''},
-      {url:''},
-      {url:''},
+      {url:'https://i0.hdslb.com/bfs/kfptfe/floor/vanea014136bc6eb48599e94afa17ad5dee7.png@686w_260h_70q_progressive.jpeg'},
+      {url:'https://i0.hdslb.com/bfs/kfptfe/floor/vaneb5d274cf163c464db79b4e50ff1a9d1d.jpg@686w_260h_70q_progressive.jpeg'},
+      {url:'https://i0.hdslb.com/bfs/kfptfe/floor/vanee99080646ab743fbb4f0f066343aaefd.png@686w_260h_70q_progressive.jpeg'},
+      {url:'https://i0.hdslb.com/bfs/kfptfe/floor/vane6e06005ea37447a79ff6e74d746fd74d.jpg@686w_260h_70q_progressive.jpeg'},
+      {url:'https://i0.hdslb.com/bfs/kfptfe/floor/vane8865199336da46f9b54e3419b0f013b5.jpg@686w_260h_70q_progressive.jpeg'},
+      {url:'https://i0.hdslb.com/bfs/kfptfe/floor/vane0f825c2f686c4d6794fa8e0f4fd46f5f.jpg@686w_260h_70q_progressive.jpeg'},
     ],
+    blibliGoods:[{url:'https://i0.hdslb.com/bfs/mall/vendor/c5/6e/c56e09076868dd8c7f9063ed42b602fb.png@372w_372h_1e_85q.webp',Price:15},
+    {url:'https://i0.hdslb.com/bfs/mall/vendor/68/94/6894c954daa56fa2a094115fdd2c70e4.png@372w_372h_1e_85q.webp',Price:16}],
     classIfyHeight:true
   },
   setclassIfy: function () {

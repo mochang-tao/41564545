@@ -99,3 +99,31 @@ width: 80%;
   width: 100%;
   height: 7vh;
 }
+.blibli{
+ width: 96%;
+ margin: 0 auto;
+ margin-top: 10px;
+ display: flex;
+}
+.blibli-left{
+  width: 50%;
+}
+.blibli-left-swiper{
+  background-size: 100% auto;
+  background-position: center top;
+  border-radius: 20px;
+}
+.blibli-right{
+  width: 50%;
+}
+.blibli-right-title{
+
+}
+.blibli-right-content{
+  width: 50%;
+  height: 90%;
+}
+.blibli-right-img{
+  width: 100%;
+  height: 80%;
+}
