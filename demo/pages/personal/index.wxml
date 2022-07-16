@@ -1,2 +1,107 @@
-<!--pages/personal/index.wxml-->
-<text>pages/personal/index.wxml</text>
+<view class="main">
+  <view class="head">
+     <view class="head-right">
+       <image class="head-right-item" src='../../static/icon/电视.png'></image>
+       <image class="head-right-item" src='../../static/icon/扫描.png'></image>
+       <image class="head-right-item" src='../../static/icon/衣服.png'></image>
+       <image class="head-right-item" src='../../static/icon/月亮.png'></image>
+     </view>
+  </view>
+  <view class="brief">
+    <view class="brief-top">
+      <view class="brief-top-img">
+        <image style="width: 70%;height: 70%;border-radius: 50%;" src="{{userUrl}}"></image>
+      </view>
+      <view class="brief-top-content">
+        <view>
+          <text style="font-size: 1.2rem;font-weight: 900;margin-right: 20px;">{{userName}}</text>
+          <text style="background: #ffbc00;color:#fff;">lv4</text>
+        </view>
+        <view style="border: 1px solid #bd6b6b;width: 35%;text-align: center;color: #bd6b6b;margin: 10px 0;">正式会员</view>
+        <view style="color: #8a8a8a;">橘币：0.0  银币：355</view>
+      </view>
+      <view class="brief-top-space">
+        <text>空间 </text> <text>></text>
+      </view>
+    </view>
+    <view class="brief-bottom">
+      <view class="brief-bottom-item">
+        <view>
+          <view style="margin-bottom: 3px;font-size: 1.2rem;">557</view>
+          <view style="color: #8a8a8a;">动态</view>
+        </view>
+      </view>
+      <view class="vertical-line"></view>
+      <view class="brief-bottom-item">
+        <view>
+          <view style="margin-bottom: 3px;font-size: 1.2rem;">106</view>
+          <view style="color: #8a8a8a;">关注</view>
+        </view>
+      </view>
+      <view class="vertical-line"></view>
+      <view style="border-right: none;" class="brief-bottom-item">
+        <view>
+          <view style="margin-bottom: 3px;font-size: 1.2rem;">1556.64k</view>
+          <view style="color: #8a8a8a;">粉丝</view>
+        </view>
+      </view>
+    </view>
+    <view class="vip">
+      <view class="vip-son">
+       <view class="vip-son-left">
+          <view style="font-size: 18px;">成为大会员</view>
+          <view>了解更多权益</view>
+        </view>
+        <view class="vip-son-right">></view>
+      </view>
+    </view>
+  </view>
+  <view>
+    <scroll-view scroll-y="true" class="classIfy">
+      <view class="record">
+        <view class="record-top">
+          <view wx:for="{{record}}"  class="" class="record-top-son">
+            <view class="record-top-img"><image  src="{{item.url}}"></image></view>
+            <view class="record-top-text">{{item.name}}</view>
+          </view>
+        </view>
+        <view class="record-bottom">
+          <view class="record-bottom-rigth">
+            <view>
+              <text style="background: #ff00009c;color: #fff;border-radius: 5px;margin-right: 10px;font-size: 18px;">up</text>
+              <text style="font-size: 1.1rem;font-weight: 900;">发布你的第一个视频</text>
+            </view>
+          <view style="font-size: 0.9rem; margin-top: 5px;color: #8a8a8a;">领限定头像挂件，赢活动奖金</view>
+          </view>
+          <view class="record-bottom-left">
+            <view style="margin: auto;width: 90%;height: 37px;border-radius: 20px;background: #ff000082;color:#fff;text-aling:center;line-height: 33px;margin-top: 10px;">
+              <image style="width: 32px;height:32px;vertical-align:middle;" src='../../static/icon/上传.png'></image>
+              发奖发布
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="service">
+        <view class="tuijian">
+            <view class="tuijian-title">推荐更多</view>
+          <view class="tuijian-list">
+             <view class="tuijian-list-son" wx:for="{{tuijianList}}">
+               <view class="tuijian-list-son-img"><image style="width: 100%;height: 100%;" src="{{item.url}}"></image></view>
+               <view class="tuijian-list-son-text">{{item.name}}</view>
+             </view>
+          </view>
+        </view>
+        <view class="gengduo">
+          <view class="gengduo-title">更多推荐</view>
+          <view class="gengduo-item" wx:for="{{gengduo}}" wx:key="index">
+            <view style="width: 10%;">
+              <image class="gengduo-img" src="{{item.url}}"></image>
+            </view>
+            <view class="gengduo-label">{{item.label}}</view>
+            <view class="gengduo-to-right">></view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

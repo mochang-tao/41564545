@@ -1,0 +1,45 @@
+<view class="main">
+  <view class="head">
+    <view class="head-img"><image style="border-radius: 50%;height: 50px;width: 50px;" src="{{userUrl}}"></image></view>
+     <input class="search-box" placeholder="jojo们的葬礼" type="text"/>
+    <view class="game"><image style="width: 32px;height: 32px;margin-top: 12px;" src="../../static/icon/手柄.png"></image></view>
+    <view class="news"><image  style="width: 32px;height: 32px;margin-top: 12px;" src="../../static/icon/信封.png"></image></view>
+  </view>
+ <view class="nav">
+   <view style="width: 87%;line-height: 50px;">
+    <scroll-view scroll-x="true">
+      <view style="display: flex;width: 135vw;">
+        <view class="nav-scroll-item" wx:key="index" data-item="{{item}}" wx:for="{{classIfy}}" bindtap="setSwitch" style="color:{{item == currentState?'red':''}};border-bottom:4px{{item == currentState?' solid red':''}}">
+          {{item}}
+        </view>
+      </view>
+    </scroll-view>
+   </view>
+  <view class="nav-open">
+     <image style="width: 32px;height: 32px;margin-top: 9px;margin-right: 10px;" src="../../static/icon/更多.png"></image>
+  </view>
+ </view>
+ <view style="background-color: #ece4e4;">
+   <scroll-view scroll-y class="body">
+     <view>
+      <swiper class="Rotation" autoplay="{{true}}" interval='{{200000}}' indicator-dots="{{true}}" indicator-color="#ccc" indicator-active-color="#fff">
+        <swiper-item class="Rotation-item" wx:for="{{rotationList}}"  wx:key="index" style="background-image: url({{item.url}}) ;" >
+          <view style="height: 85%;"></view>
+          <view style="height: 15%;color: #ffffff;margin-left: 15px;font-weight: 900;font-size: 20px;">{{item.titel}}</view>
+        </swiper-item>
+      </swiper>
+     </view>
+     <view class="list">
+       <view class="list-item" wx:for="{{list}}" wx:key="index">
+         <view class="list-top" style="background-image: url({{item.url}}) ;">
+           <view class="list-top-content"></view>
+         </view>
+         <view class="list-bottom">
+           <view class="list-bottom-title">{{item.titel}}</view>
+           <view class="list-bottom-function">{{item.name}}</view>
+         </view>
+       </view>
+     </view>
+   </scroll-view>
+ </view>
+</view>

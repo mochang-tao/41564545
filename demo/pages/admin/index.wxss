@@ -1,0 +1,111 @@
+.main{
+
+}
+.head{
+ display: flex;
+ height: 6vh;
+}
+.head-img{
+  height: 50px;
+  width: 20%;
+  text-align: center;
+}
+.search-box{
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  margin-top: 10px;
+  height: 32px;
+  line-height: 32px;
+}
+.game{
+  width: 15%;
+  text-align: center;
+}
+.news{
+  text-align: center;
+  width: 15%;
+}
+.nav{
+  width: 100%;
+  display: flex;
+  height: 7vh;
+}
+.nav-scroll{
+  /* width: 200px; */
+  height: 50px;
+  display: flex;
+}
+.nav-scroll-item{
+  /* width: 14vw; */
+  width: 17vw;
+  text-align: center;
+  height: 40px;
+  font-size: 1.1rem;
+}
+.nav-open{
+  width: 15%;
+  height: 50px;
+  text-align: right;
+}
+.body{
+  width: 96%;
+  margin: 0 auto;
+  height: 87vh;
+}
+.Rotation{
+  height: 200px;
+}
+.Rotation-item{
+  background-position: center top;
+  width: 100%;
+  height: 100%;
+  background-size: 100% auto;
+  border-radius: 5px;
+}
+.list{
+  padding-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+.list-item{
+  width: 48%;
+  height: 215px;
+  background-color: #fff;
+  margin-bottom: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.list-top{
+  width: 100%;
+  height: 125px;
+  background-size: 100% 100%;
+  background-position: center top;
+  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.list-bottom{
+  padding: 10px;
+}
+.list-bottom-title{
+ /* 多行文本溢出隐藏  省略号代替 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;/*设置对齐模式：垂直对齐*/
+  -webkit-line-clamp: 2;/*设置多行的行数*/
+}
+.list-bottom-function{
+  color: #9c9797;
+  display: block;/*block	此元素将显示为块级元素，此元素前后会带有换行符。text 为内联元素，而overflow：hidden；作用于块元素上*/
+  white-space: nowrap;/*取消换行*/
+  overflow: hidden;/*超出的部分隐藏*/
+  text-overflow: ellipsis;/*隐藏的部分用省略号代替*/
+  margin-top: 10px;
+}
+.wx-swiper-dots{position:relative;left: unset!important;right: 0;}
+.wx-swiper-dots.wx-swiper-dots-horizontal{
+margin-bottom: -5rpx;}

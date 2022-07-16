@@ -5,9 +5,28 @@
       ---------
     </view>
     <view class="rigth">
-      <view><icon></icon></view>
-      <text></text>
+      <view class="right_name">
+        <text>{{userName}}</text>
+      </view>
+    <view class="rigth_img">
+      <image style="width: 100%;height: 100%;border-radius: 50px;" bindtap="bindViewTap" class="userinfo-avatar" alt="屑特" src="{{userUrl}}"  mode="cover"></image>
     </view>
+    </view>
+  </view>
+  <view class="body">
+    <view class="body_item" wx:for="{{classIfyList}}" wx:key="index" wx:for-item="itemx">
+      <view class="body_item_img"><image style="width:100%;height:100%" src="{{itemx.url}}"></image></view>
+      <view class="body_item_text">{{itemx.text}}</view>
+    </view>
+  </view>
+  <view class="swiper">
+    <swiper autoplay="{{true}}" interval='{{2000}}' indicator-dots="{{true}}">
+      <block wx:for="{{swiperList}}" wx:key="index">
+         <swiper-item>
+            <image src="{{item.url}}"></image>
+         </swiper-item>
+      </block>
+    </swiper>
   </view>
 </view>
 <view wx-if="{{initial}}" class="initial">

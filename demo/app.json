@@ -1,5 +1,8 @@
 {
     "pages": [
+        "pages/shop/index",
+        "pages/admin/index",
+        "pages/start/index",
         "pages/index/index",
         "pages/classification/index",
         "pages/personal/index"
@@ -18,8 +21,16 @@
     "backgroundColor": "#ffffff",
     "list": [
         {
-            "pagePath":"pages/index/index",
-            "text": "首页"
+          "pagePath": "pages/admin/index",
+          "text": "首页",
+          "iconPath": "./static/icon/房子2.png",
+          "selectedIconPath": "./static/icon/房子.png"
+        },
+        {
+          "pagePath": "pages/shop/index",
+          "text": "商城",
+          "iconPath":"./static/icon/购物2.png",
+          "selectedIconPath": "./static/icon/购物1.png"
         },
         {
             "pagePath": "pages/classification/index",
@@ -27,7 +38,9 @@
         },
         {
             "pagePath":"pages/personal/index",
-            "text": "个人中心"
+            "text": "个人中心",
+            "iconPath": "./static/icon/我的2.png",
+            "selectedIconPath": "./static/icon/我的.png"
         }
     ]
     }

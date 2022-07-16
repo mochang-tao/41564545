@@ -1,0 +1,56 @@
+<view class="shop">
+  <view class="head">
+    <view class="head-left">会员购</view>
+    <view class="head-middle">官方直营 正品保证</view>
+    <view class="head-news-box"><image style="width: 32px;height: 32px;vertical-align: middle;" src="../../static/icon/消息盒子.png"></image></view>
+    <view class="head-shop"><image style="width: 32px;height: 32px;vertical-align: middle;" src="../../static/icon/3.1购物车.png"></image></view>
+    <view class="head-img"><image style="width: 32px;height: 32px;vertical-align: middle;" src="../../static/icon/头像 .png"></image></view>
+  </view>
+  <view style="height: 90vh;">
+    <scroll-view scroll-y>
+      <view class="search">
+        <view class="search-left">
+          <view class="search-icon"><image style="width: 20px;height: 20px;margin-top: 15px;" src="../../static/icon/搜索.png"></image></view>
+          <view class="search-input"><input placeholder="小电视拼装 结构大解密" style="height: 100%;" type="text"/></view>
+          <view class="search-ar"><image style="width: 30px;height: 32px;margin-top: 10px;" src="../../static/icon/相机.png"></image></view>
+        </view>
+        <view class="search-right">
+          <view style="font-size: 1.2rem;line-height: 1.2rem;font-weight: 600;">ALL</view>
+          <view style="font-size: 0.9rem;font-weight: 600;">分类</view>
+        </view>
+      </view>
+      <view>
+        <swiper  indicator-dots="{{true}}" style="height: {{classIfyHeight?'90px':'200px'}} ;" bindchange='setclassIfy' easeInOutCubic>
+          <swiper-item class="classIfy">
+            <view class="classIfy-childred" wx:for="{{listData}}" wx:key="index">
+              <view class="classIfy-childred-img"><image src="{{item.url}}"></image></view>
+            </view>
+          </swiper-item>
+          <swiper-item class="classIfyNo2">
+            <view wx:for="{{classIfy}}" wx:key="index" class="classIfyNo2-childred">
+              <view class="classIfyNo2-childred-img"><image src="{{item.url}}"></image></view>
+              <view>{{item.name}}</view>
+            </view>
+          </swiper-item>
+        </swiper>
+      </view>
+      <view class="interest">
+       <view class="interest-childerd" wx:for="{{interestList}}" wx:key="index">
+         <view class="interest-childerd-img"><image src="{{item.url}}"></image></view>
+         <view style="text-align: center;font-size: 0.9rem;">{{item.name}}</view>
+       </view>
+      </view>
+      <view class="blibli">
+        <view class="blibli-left">
+          <swiper indicator-dots="true" autoplay="true" interval="{{10000}}">
+            <swiper-item wx:for="{{}}" wx:key="index">
+
+            </swiper-item>
+          </swiper>
+        </view>
+        <view class="blibli-right"></view>
+      </view>
+    </scroll-view>
+  </view>
+ 
+</view>
