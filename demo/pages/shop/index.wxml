@@ -6,8 +6,8 @@
     <view class="head-shop"><image style="width: 32px;height: 32px;vertical-align: middle;" src="../../static/icon/3.1购物车.png"></image></view>
     <view class="head-img"><image style="width: 32px;height: 32px;vertical-align: middle;" src="../../static/icon/头像 .png"></image></view>
   </view>
-  <view style="height: 90vh;">
-    <scroll-view scroll-y>
+  <view>
+    <scroll-view scroll-y style="height: 94vh;">
       <view class="search">
         <view class="search-left">
           <view class="search-icon"><image style="width: 20px;height: 20px;margin-top: 15px;" src="../../static/icon/搜索.png"></image></view>
@@ -49,13 +49,33 @@
         </view>
         <view class="blibli-right">
           <view class="blibli-right-title">
-            <text>魔力赏</text>
-            <text>每周五海量上新</text>
+            <text style="font-size: 4vw;font-weight: 700;margin: 0 3vw;">魔力赏</text>
+            <text style="background-color: rebeccapurple;border-radius: 11px;padding: 0 6px;color: #fff;">每周五海量上新</text>
           </view>
-          <view class="blibli-right-content" wx:for="{{blibliGoods}}" wx:key="index">
+          <view style="width: 100%;height: 90%;display: flex;">
+            <view class="blibli-right-content" wx:for="{{blibliGoods}}" wx:key="index">
               <view class="blibli-right-img"><image src="{{item.url}}"></image></view>
-              <view style="text-align: center;">{{item.Price}}</view>
+              <view class="blibli-right-price" >{{item.Price}}￥</view>
           </view>
+          </view>
+        </view>
+      </view>
+      <view class="fourModular">
+         <view class="fourModular-childerd" wx:for="{{fourmodular}}" wx:key="index">
+           <view class="fourModular-title">{{item.title}}</view>
+           <view class="fourModular-img"><image src="{{item.url}}"></image></view>
+           <view wx:if="{{item.classIfy == '上新'}}" class="fourModular-classIfy" style="color: chocolate;">{{item.classIfy}} {{item.num}}</view>
+           <view wx:elif="{{item.classIfy == '新情报'}}"  class="fourModular-classIfy" style="color: rgb(128, 116, 48);">{{item.classIfy}} {{item.num}}</view>
+           <view wx:elif="{{item.classIfy == 'GSC榜'}}"  class="fourModular-classIfy" style="color: rgb(42, 40, 156);">{{item.classIfy}} {{item.num}}</view>
+         </view>
+      </view>
+      <view class="list">
+        <view class="list-son" wx:for="{{list}}" wx:key="index" >
+          <view class="list-img" style="background-image: url({{item.ulr}})"></view>
+          <view style="background-image: url(../../static/img/rgba.jpg);" wx:if="{{item.special}}" class="list-show">{{item.special}}</view>
+          <view class="list-content"></view>
+          <view class="list-title"></view>
+          <view class="list-Price"></view>
         </view>
       </view>
     </scroll-view>

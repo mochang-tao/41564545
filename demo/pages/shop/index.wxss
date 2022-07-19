@@ -1,5 +1,6 @@
 .shop{
-
+  background-color: rgb(243, 237, 237);
+  height: 100%;
 }
 /* 头部 */
 .head{
@@ -109,9 +110,10 @@ width: 80%;
   width: 50%;
 }
 .blibli-left-swiper{
-  background-size: 100% auto;
-  background-position: center top;
   border-radius: 20px;
+  background: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
 }
 .blibli-right{
   width: 50%;
@@ -126,4 +128,80 @@ width: 80%;
 .blibli-right-img{
   width: 100%;
   height: 80%;
+}
+.blibli-right-price{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #decff7;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    color: rgb(60, 60, 177);
+}
+.fourModular{
+  width: 100%;
+  height: 140px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+.fourModular-childerd{
+  width: 25%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0 2px;
+  padding-top: 5px;
+  box-sizing: border-box;
+}
+.fourModular-img{
+  width: 90%;
+  height: 55%;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+.fourModular-title{
+  text-align: center;
+  font-weight: 600;
+}
+.fourModular-classIfy{
+  width: 90%;
+  margin: 0 auto;
+  background-color:rgb(243, 237, 237);
+  text-align: center;
+  font-weight: 500;
+  border-radius: 20px;
+}
+.list{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.list-son{
+  width: 46%;
+  margin: 0 2%;
+  height: 250px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 5px;
+}
+.list-img{
+  height: 75%;
+  width: 100%;
+  background-size: 100% auto;
+  background-position: center top;
+}
+.list-show{
+  width: 100%;
+  height: 30px;
+  background-size: 100% auto;
+  line-height: 30px;
+  background-position: center top;
+  padding: 0 15px;
+  font-size: 14px;
+  box-sizing: border-box;
 }
