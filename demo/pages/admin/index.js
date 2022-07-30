@@ -90,8 +90,12 @@ Page({
     this.setData({
       userUrl: c.avatarUrl
     })
+    this.setData({
+      currentState:"推荐"
+    })
   },
   setSwitch: function (e) {
+    console.log(e)
     this.setData({
       currentState: e.target.dataset.item
     })

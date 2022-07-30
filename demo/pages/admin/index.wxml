@@ -9,7 +9,7 @@
    <view style="width: 87%;line-height: 50px;">
     <scroll-view scroll-x="true">
       <view style="display: flex;width: 135vw;">
-        <view class="nav-scroll-item" wx:key="index" data-item="{{item}}" wx:for="{{classIfy}}" bindtap="setSwitch" style="color:{{item == currentState?'red':''}};border-bottom:4px{{item == currentState?' solid red':''}}">
+        <view class="nav-scroll-item" wx:key="index" data-item="{{item}}" wx:for="{{classIfy}}" bindtap="setSwitch" style="color:{{item == currentState?'#ec0ac6e6':''}};border-bottom:4px{{item == currentState?' solid #ec0ac6e6':''}}">
           {{item}}
         </view>
       </view>
@@ -19,7 +19,7 @@
      <image style="width: 32px;height: 32px;margin-top: 9px;margin-right: 10px;" src="../../static/icon/更多.png"></image>
   </view>
  </view>
- <view style="background-color: #ece4e4;">
+ <view wx:if="{{currentState == '推荐'}}" style="background-color: #ece4e4;">
    <scroll-view scroll-y class="body">
      <view>
       <swiper class="Rotation" autoplay="{{true}}" interval='{{200000}}' indicator-dots="{{true}}" indicator-color="#ccc" indicator-active-color="#fff">
@@ -41,5 +41,8 @@
        </view>
      </view>
    </scroll-view>
+ </view>
+ <view wx:if="{{currentState == '热门'}}">
+   <hot></hot>
  </view>
 </view>

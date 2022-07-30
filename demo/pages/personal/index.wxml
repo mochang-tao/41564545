@@ -60,7 +60,7 @@
     <scroll-view scroll-y="true" class="classIfy">
       <view class="record">
         <view class="record-top">
-          <view wx:for="{{record}}"  class="" class="record-top-son">
+          <view wx:for="{{record}}"  wx:key="index" class="record-top-son">
             <view class="record-top-img"><image  src="{{item.url}}"></image></view>
             <view class="record-top-text">{{item.name}}</view>
           </view>
@@ -85,7 +85,7 @@
         <view class="tuijian">
             <view class="tuijian-title">推荐更多</view>
           <view class="tuijian-list">
-             <view class="tuijian-list-son" wx:for="{{tuijianList}}">
+             <view class="tuijian-list-son" wx:for="{{tuijianList}}" wx:key="index">
                <view class="tuijian-list-son-img"><image style="width: 100%;height: 100%;" src="{{item.url}}"></image></view>
                <view class="tuijian-list-son-text">{{item.name}}</view>
              </view>

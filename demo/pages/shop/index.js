@@ -165,6 +165,52 @@ Page({
       price: '55',
       num: 45545
     }],
+    listTow: [{
+      ulr: 'https://i0.hdslb.com/bfs/mall/vendor/7e/c1/7ec121dcb64eb610f3ba29b16d2f7c35.png',
+      title: 'BILIBILIGOODS 2233 便携mini magsafe磁吸移动电源',
+      centent: 'cddshi榜',
+      classIfy: '延期无忧',
+      price: '55',
+      num: 45545,
+    }, {
+      ulr: 'https://i0.hdslb.com/bfs/mall/vendor/7e/c1/7ec121dcb64eb610f3ba29b16d2f7c35.png',
+      title: 'BILIBILIGOODS 2233 便携mini magsafe磁吸移动电源',
+      centent: 'cddshi榜',
+      classIfy: '延期无忧',
+      price: '55',
+      num: 45545
+    }, {
+      ulr: 'https://i0.hdslb.com/bfs/mall/vendor/7e/c1/7ec121dcb64eb610f3ba29b16d2f7c35.png',
+      title: 'BILIBILIGOODS 2233 便携mini magsafe磁吸移动电源',
+      centent: 'cddshi榜',
+      classIfy: '延期无忧',
+      price: '55',
+      num: 45545,
+      special:'超值款，无敌的游戏机',
+      label:[{name:'魔王挑战'},{name:'免费试玩'},{name:'魔力赏'}],
+    }, {
+      ulr: 'https://i0.hdslb.com/bfs/mall/vendor/7e/c1/7ec121dcb64eb610f3ba29b16d2f7c35.png',
+      title: 'BILIBILIGOODS 2233 便携mini magsafe磁吸移动电源',
+      centent: 'cddshi榜',
+      classIfy: '延期无忧',
+      price: '55',
+      num: 45545,
+      special:'超值款，无敌的游戏机'
+    }, {
+      ulr: 'https://i0.hdslb.com/bfs/mall/vendor/7e/c1/7ec121dcb64eb610f3ba29b16d2f7c35.png',
+      title: 'BILIBILIGOODS 2233 便携mini magsafe磁吸移动电源',
+      centent: 'cddshi榜',
+      classIfy: '延期无忧',
+      price: '55',
+      num: 45545
+    }, {
+      ulr: 'https://i0.hdslb.com/bfs/mall/vendor/7e/c1/7ec121dcb64eb610f3ba29b16d2f7c35.png',
+      title: 'BILIBILIGOODS 2233 便携mini magsafe磁吸移动电源',
+      centent: 'cddshi榜',
+      classIfy: '延期无忧',
+      price: '55',
+      num: 45545
+    }],
     classIfyHeight: true
   },
   setclassIfy: function () {

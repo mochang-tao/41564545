@@ -1,6 +1,6 @@
 <view class="start">
   <swiper class="swiper_box" indicator-dots="{{ indicatorDots }}" autoplay="{{ autoplay }}" current="{{ current }}" interval="{{ interval }}" duration="{{ duration }}" circular="{{ circular }}">
-    <swiper-item bindtap="goLogin">
+    <swiper-item bindtap="getUserNews">
       <image src="../../static/img/start.jpg" class="slide-image" bindload="bindload" />
   </swiper-item>
   </swiper>

@@ -1,6 +1,4 @@
-.main{
 
-}
 .head{
  display: flex;
  height: 6vh;

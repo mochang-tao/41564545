@@ -1,8 +1,9 @@
 {
     "pages": [
+       "pages/start/index",
+        "pages/dynamic/index",
         "pages/shop/index",
         "pages/admin/index",
-        "pages/start/index",
         "pages/index/index",
         "pages/classification/index",
         "pages/personal/index"
@@ -10,12 +11,11 @@
     "window": {
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "Weixin",
+        "navigationBarTitleText": "blibli",
         "navigationBarTextStyle": "black"
     },
-    "style": "v2",
     "sitemapLocation": "sitemap.json",
-   "tabBar": {
+    "tabBar": {
     "color": "red",
     "selectedColor": "black",
     "backgroundColor": "#ffffff",
@@ -27,14 +27,16 @@
           "selectedIconPath": "./static/icon/房子.png"
         },
         {
+          "pagePath": "pages/dynamic/index",
+          "text": "动态",
+          "iconPath": "./static/icon/风车.png",
+          "selectedIconPath": "./static/icon/风车1.png"
+        },
+        {
           "pagePath": "pages/shop/index",
           "text": "商城",
           "iconPath":"./static/icon/购物2.png",
           "selectedIconPath": "./static/icon/购物1.png"
-        },
-        {
-            "pagePath": "pages/classification/index",
-            "text": "分类"
         },
         {
             "pagePath":"pages/personal/index",
@@ -42,6 +44,6 @@
             "iconPath": "./static/icon/我的2.png",
             "selectedIconPath": "./static/icon/我的.png"
         }
-    ]
+           ]
     }
 }

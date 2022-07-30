@@ -50,7 +50,7 @@
         <view class="blibli-right">
           <view class="blibli-right-title">
             <text style="font-size: 4vw;font-weight: 700;margin: 0 3vw;">魔力赏</text>
-            <text style="background-color: rebeccapurple;border-radius: 11px;padding: 0 6px;color: #fff;">每周五海量上新</text>
+            <text style="background-color: rebeccapurple;border-radius: 11px;color: #fff;">每周五海量上新</text>
           </view>
           <view style="width: 100%;height: 90%;display: flex;">
             <view class="blibli-right-content" wx:for="{{blibliGoods}}" wx:key="index">
@@ -69,15 +69,51 @@
            <view wx:elif="{{item.classIfy == 'GSC榜'}}"  class="fourModular-classIfy" style="color: rgb(42, 40, 156);">{{item.classIfy}} {{item.num}}</view>
          </view>
       </view>
+     <view style="display: flex;">
       <view class="list">
         <view class="list-son" wx:for="{{list}}" wx:key="index" >
           <view class="list-img" style="background-image: url({{item.ulr}})"></view>
           <view style="background-image: url(../../static/img/rgba.jpg);" wx:if="{{item.special}}" class="list-show">{{item.special}}</view>
-          <view class="list-content"></view>
-          <view class="list-title"></view>
-          <view class="list-Price"></view>
+          <view class="list-title">{{"  "+item.title}}</view>
+          <view class="list-content">
+            <text style="margin-right: 5px; background-color: #f3c683a6;color: #6d3d02;padding: 1px 5px;border-radius: 5px;" wx:if="{{item.centent}}">{{item.centent}}</text>
+            <text style="background: #b8d2f5ad;color:#409EFF;padding: 1px 5px;border-radius: 5px;" wx:if="{{item.classIfy}}">{{item.classIfy}}</text>
+          </view>
+          <view class="list-Price">
+            <view class="list-price-left">
+              ￥<text style="font-size: 1.2rem;">{{item.price}}</text>
+            </view>
+            <view class="list-price-right">
+              <image style="width: 1rem;height: 1rem;vertical-align: text-bottom;" src="../../static/icon/爱心.png"></image>
+              {{item.num}}</view>
+          </view>
         </view>
       </view>
+      <view class="list">
+        <view class="list-son" wx:for="{{listTow}}" wx:key="index" >
+          <view class="list-img" style="background-image: url({{item.ulr}})"></view>
+          <view style="background-image: url(../../static/img/rgba.jpg);" wx:if="{{item.special}}" class="list-show">{{item.special}}</view>
+          <view class="list-title">{{"  "+item.title}}</view>
+          <view class="list-content">
+            <text style="margin-right: 5px; background-color: #f3c683a6;color: #6d3d02;padding: 1px 5px;border-radius: 5px;" wx:if="{{item.centent}}">{{item.centent}}</text>
+            <text style="background: #b8d2f5ad;color:#409EFF;padding: 1px 5px;border-radius: 5px;" wx:if="{{item.classIfy}}">{{item.classIfy}}</text>
+          </view>
+          <view class="list-label" wx:if="{{item.label}}">
+            <view class="list-label-children" wx:for="{{item.label}}" wx:for-item="items" wx:for-index="indexx" wx:key="indexx">
+              {{items.name}}
+            </view>
+          </view>
+          <view class="list-Price">
+            <view class="list-price-left">
+              ￥<text style="font-size: 1.2rem;">{{item.price}}</text>
+            </view>
+            <view class="list-price-right">
+              <image style="width: 1rem;height: 1rem;vertical-align: text-bottom;" src="../../static/icon/爱心.png"></image>
+              {{item.num}}</view>
+          </view>
+        </view>
+      </view>
+     </view>
     </scroll-view>
   </view>
  
