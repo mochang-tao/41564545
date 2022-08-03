@@ -91,7 +91,7 @@ Page({
       userUrl: c.avatarUrl
     })
     this.setData({
-      currentState:"推荐"
+      currentState:"热门"
     })
   },
   setSwitch: function (e) {

@@ -1,6 +1,6 @@
 <view class="main">
   <view class="head">
-    <view class="head-img"><image style="border-radius: 50%;height: 50px;width: 50px;" src="{{userUrl}}"></image></view>
+    <view class="head-img"><image style="border-radius: 50%;width: 100rpx;" src="{{userUrl}}"></image></view>
      <input class="search-box" placeholder="jojo们的葬礼" type="text"/>
     <view class="game"><image style="width: 32px;height: 32px;margin-top: 12px;" src="../../static/icon/手柄.png"></image></view>
     <view class="news"><image  style="width: 32px;height: 32px;margin-top: 12px;" src="../../static/icon/信封.png"></image></view>
@@ -8,7 +8,7 @@
  <view class="nav">
    <view style="width: 87%;line-height: 50px;">
     <scroll-view scroll-x="true">
-      <view style="display: flex;width: 135vw;">
+      <view style="display: flex;width: 135vw;line-height: 93rpx;">
         <view class="nav-scroll-item" wx:key="index" data-item="{{item}}" wx:for="{{classIfy}}" bindtap="setSwitch" style="color:{{item == currentState?'#ec0ac6e6':''}};border-bottom:4px{{item == currentState?' solid #ec0ac6e6':''}}">
           {{item}}
         </view>
@@ -16,7 +16,7 @@
     </scroll-view>
    </view>
   <view class="nav-open">
-     <image style="width: 32px;height: 32px;margin-top: 9px;margin-right: 10px;" src="../../static/icon/更多.png"></image>
+     <image style="width: 64rpx;height: 64rpx;margin-top: 18rpx;margin-right: 20rpx;" src="../../static/icon/更多.png"></image>
   </view>
  </view>
  <view wx:if="{{currentState == '推荐'}}" style="background-color: #ece4e4;">
@@ -43,6 +43,8 @@
    </scroll-view>
  </view>
  <view wx:if="{{currentState == '热门'}}">
-   <hot></hot>
+   <scroll-view scroll-y  style="height: 84vh;">
+    <hot></hot>
+   </scroll-view>
  </view>
 </view>

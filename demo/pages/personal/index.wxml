@@ -14,10 +14,10 @@
       </view>
       <view class="brief-top-content">
         <view>
-          <text style="font-size: 1.2rem;font-weight: 900;margin-right: 20px;">{{userName}}</text>
+          <text style="font-size: 32rpx;font-weight: 900;margin-right: 20px;">{{userName}}</text>
           <text style="background: #ffbc00;color:#fff;">lv4</text>
         </view>
-        <view style="border: 1px solid #bd6b6b;width: 35%;text-align: center;color: #bd6b6b;margin: 10px 0;">正式会员</view>
+        <view style="border: 1px solid #bd6b6b;width: 35%;text-align: center;color: #bd6b6b;margin: 20rpx 0;">正式会员</view>
         <view style="color: #8a8a8a;">橘币：0.0  银币：355</view>
       </view>
       <view class="brief-top-space">
@@ -27,21 +27,21 @@
     <view class="brief-bottom">
       <view class="brief-bottom-item">
         <view>
-          <view style="margin-bottom: 3px;font-size: 1.2rem;">557</view>
+          <view style="margin-bottom: 3px;font-size: 34rpx;">557</view>
           <view style="color: #8a8a8a;">动态</view>
         </view>
       </view>
       <view class="vertical-line"></view>
       <view class="brief-bottom-item">
         <view>
-          <view style="margin-bottom: 3px;font-size: 1.2rem;">106</view>
+          <view style="margin-bottom: 3px;font-size:34rpx;">106</view>
           <view style="color: #8a8a8a;">关注</view>
         </view>
       </view>
       <view class="vertical-line"></view>
       <view style="border-right: none;" class="brief-bottom-item">
         <view>
-          <view style="margin-bottom: 3px;font-size: 1.2rem;">1556.64k</view>
+          <view style="margin-bottom: 3px;font-size: 34rpx;">1556.64k</view>
           <view style="color: #8a8a8a;">粉丝</view>
         </view>
       </view>
@@ -49,7 +49,7 @@
     <view class="vip">
       <view class="vip-son">
        <view class="vip-son-left">
-          <view style="font-size: 18px;">成为大会员</view>
+          <view style="font-size: 36rpx;">成为大会员</view>
           <view>了解更多权益</view>
         </view>
         <view class="vip-son-right">></view>
@@ -69,13 +69,13 @@
           <view class="record-bottom-rigth">
             <view>
               <text style="background: #ff00009c;color: #fff;border-radius: 5px;margin-right: 10px;font-size: 18px;">up</text>
-              <text style="font-size: 1.1rem;font-weight: 900;">发布你的第一个视频</text>
+              <text style="font-size: 37rpx;font-weight: 900;">发布你的第一个视频</text>
             </view>
-          <view style="font-size: 0.9rem; margin-top: 5px;color: #8a8a8a;">领限定头像挂件，赢活动奖金</view>
+          <view style="font-size: 24rpx; margin-top: 5px;color: #8a8a8a;">领限定头像挂件，赢活动奖金</view>
           </view>
           <view class="record-bottom-left">
-            <view style="margin: auto;width: 90%;height: 37px;border-radius: 20px;background: #ff000082;color:#fff;text-aling:center;line-height: 33px;margin-top: 10px;">
-              <image style="width: 32px;height:32px;vertical-align:middle;" src='../../static/icon/上传.png'></image>
+            <view style="margin: auto;width: 90%;height: 62rpx;border-radius: 16rpx;background: #ff000082;color:#fff;text-aling:center;line-height: 66rpx;margin-top: 20rpx;">
+              <image style="width: 64rpx;height:64rpx;vertical-align:middle;margin-bottom: 6rpx;" src='../../static/icon/上传.png'></image>
               发奖发布
             </view>
           </view>

@@ -1,2 +1,28 @@
 <!--components/Hot/hot.wxml-->
-<text>components/Hot/hot.wxml</text>
+<view class="hot">
+  <scroll-view scroll-x class="head">
+     <view wx:for="{{headData}}" wx:key="index" class="head-children">
+        <image src="{{item.title}}" class="head-img"></image>
+        <view>{{item.url}}</view>
+     </view>
+  </scroll-view>
+  <view wx:for="{{list}}" class="list"  wx:key="index">
+    <view class="list-letf" style="background: url({{item.ulr}});background-position: top center;background-size: 100% 100%;background-repeat: no-repeat;">
+      <view style="height: 83%;"></view>
+      <view class="list-img-date">{{item.date}}</view>
+    </view>
+    <view class="list-right">
+       <view class="list-title">{{item.title}}</view>
+       <text class="list-label">{{item.label}}</text>
+       <view class="list-UP-name">
+         <text style="border: 1px solid #adabab;border-radius: 4px;font-weight: 500;font-size: 18rpx;padding: 4rpx;margin: 1px;color: #adabab;margin-right: 6rpx;">UP</text>
+         <text style="color: #adabab;">{{item.name}}</text>
+        </view>
+       <view class="list-area">
+        <image style="width: 35rpx;height: 35rpx;" src="../../static/icon/播放.png"></image>
+        <view style="padding: 0 15rpx;color: #a09c9c;width: 80%;">{{item.Num}}观看 ~ {{item.createTime}}</view>
+        <image style="width: 35rpx;height: 35rpx;" src="../../static/icon/更多竖着.png"></image>
+       </view>
+    </view>
+  </view>
+</view>

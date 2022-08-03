@@ -4,7 +4,7 @@
 }
 .head{
   width: 100%;
-  height: 10vh;
+  height: 6vh;
 }
 .head-right{
   float: right;
@@ -15,18 +15,17 @@
   align-items: center;
 }
 .head-right-item{
-  width: 2rem;
-  height: 2rem;
+  height: 50rpx;
   margin-left: 20px;
 }
 .brief{
   width: 100%;
-  height: 30vh;
+  height: 32vh;
 }
 .brief-top{
   width: 100%;
   display: flex;
-  height: 50%;
+  height: 45%;
 }
 .brief-top-img{
   width: 25%;
@@ -42,7 +41,7 @@
 }
 .brief-bottom{
   width: 100%;
-  height: 60px;
+  height: 27%;
   display: flex;
 }
 .brief-bottom-item{
@@ -52,14 +51,15 @@
 }
 .vertical-line{
   width: 1px;
-  height: 30px;
+  height: 60rpx;
   line-height: 100px;
   background-color: #beb8b8;
-  margin-top: 15px;
+  margin-top: 30rpx;
 }
 .vip{ 
   background-image: linear-gradient(rgba(255,0,0,0),rgba(255,0,0,0.2));
-  height: 60px;
+  height: 28%;
+  box-sizing: border-box;
 }
 .vip-son{
   width: 92%;
@@ -67,10 +67,10 @@
   border: 1px solid #bd6b6b;
   border-bottom: none;
   height: 100%;
-  border-radius: 5px;
+  border-radius: 10rpx;
   box-sizing: border-box;
-  padding-top: 10px;
-  padding-left: 26px;
+  padding-top: 12rpx;
+  padding-left: 52rpx;
   color: #bd6b6b;
   display: flex;
 }
@@ -84,14 +84,12 @@
 /* 下屏幕 */
 .classIfy{
   width: 92%;
-  height: 60vh;
+  height: 62vh;
   margin: 0 auto;
-  padding-top: 25px;
   box-sizing: border-box;
 }
 .record{
   width: 100%;
-  height: 150px;
   padding: 10px 0;
 }
 .record-top{
@@ -113,12 +111,13 @@
 }
 .record-bottom{
   width: 92%;
-  height: 60px;
+  height: 120rpx;
   display: flex;
-  padding: 10px;
+  padding: 20rpx;
   border: 1px solid #ccc;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 20rpx;
+  padding: 20rpx 20rpx 0 20rpx;
   /* background-image: linear-gradient(to right, rgba(255.0.0.0) ,rgba(255.0.0.01)); */
   background-image: linear-gradient(to right, rgba(255,0,0,0),rgba(255,0,0,0.1));
 }
@@ -126,7 +125,7 @@
  width: 65%;
 }
 .record-bottom-left{
-  width: 40%;
+  width: 34%;
 }
 .service{
   width: 92%;
@@ -152,13 +151,12 @@
   text-align: center;
 }
 .tuijian-list-son-img{
-  width: 32px;
-  height: 32px;
+  width: 64rpx;
+  height: 64rpx;
   margin: 0 auto;
 }
 .tuijian-list-son-text{
   margin-top: 5px;
-  font-size: 12px;
 }
 .gengduo{
   padding-top: 40px;
@@ -177,8 +175,8 @@
   line-height: 35px;
 }
 .gengduo-img{
-  width: 32px;
-  height: 32px;
+  width: 64rpx;
+  height: 64rpx;
 }
 .gengduo-label{
   width: 80%;

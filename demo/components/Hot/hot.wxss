@@ -1,1 +1,13 @@
 /* components/Hot/hot.wxss */
+.hot {width: 100%;height: 100%;padding-top: 30rpx;}
+.head{ height: 144rpx ;white-space: nowrap;}
+.head-img{height: 90rpx;width: 90rpx;}
+.head-children { display: inline-block;width: 150rpx;text-align: center;}
+.list{width: 100%;height: 210rpx; display: flex;padding: 20rpx 0 20rpx 0;margin-left: 1%;border-bottom: 1px solid #ccc;}
+.list-letf{height: 100%;width: 46%;border-radius: 8px;margin:  0 2% 0 0;}
+.list-right{width: 50%;height: 100%;}
+.list-img-date{color: #fff;text-align: right;margin-right: 20rpx;}
+.list-title{font-size: 28rpx;font-weight: 700;height: 45px;}
+.list-label{background: #f9dec7d1;color: #ff9c08;padding: 0 6px;border-radius: 3px;}
+.list-UP-name{margin: 10rpx 0;}
+.list-area{display: flex;height: 40rpx;width: 100%;}

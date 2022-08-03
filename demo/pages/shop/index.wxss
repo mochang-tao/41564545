@@ -12,7 +12,7 @@
 .head-left{
   width: 18vw;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 32rpx;
   font-weight: 600;
 }
 .head-middle{
@@ -58,6 +58,7 @@
 }
 .search-input{
 width: 80%;
+margin-top: 16rpx;
 }
 /* 搜索结束 */
 /* 分类开始 */

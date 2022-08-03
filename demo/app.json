@@ -1,9 +1,9 @@
 {
     "pages": [
-       "pages/start/index",
-        "pages/dynamic/index",
+      "pages/admin/index",
         "pages/shop/index",
-        "pages/admin/index",
+        "pages/start/index",
+        "pages/dynamic/index",
         "pages/index/index",
         "pages/classification/index",
         "pages/personal/index"
